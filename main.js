@@ -290,4 +290,4 @@ window.addEventListener('scroll', () => {
     }
 });
 
-console.log('Summit & Soul | High-Altitude Roast. Ground-Level Soul.');
+console.log('APEX | High-Altitude Roast. Pure Apex.');

@@ -294,3 +294,28 @@ code {
     border-right-color: var(--border);
   }
 }
+
+/* QR Code Section */
+#qr-code {
+  padding: 32px;
+  text-align: center;
+}
+
+#qr-code h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.qr-container {
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+  display: inline-block;
+  box-shadow: var(--shadow);
+}
+
+.qr-image {
+  width: 200px;
+  height: 200px;
+  display: block;
+}

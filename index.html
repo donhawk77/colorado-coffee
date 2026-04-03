@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>APEX | High-Altitude Organic Coffee | High-Altitude Organic Coffee</title>
     <meta name="description" content="Premium, organically sourced coffee beans. Colorado-born, snowboard-inspired. A portion of every sale goes to charity.">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <nav>
@@ -36,7 +36,7 @@
 
     <header class="hero">
         <div class="hero-bg">
-            <img src="/public/assets/hero.png" alt="APEX High Altitude">
+            <img src="./assets/hero.png" alt="APEX High Altitude">
         </div>
         <div class="container hero-content">
             <h1 class="reveal">Peak Roast.<br>Pure Apex.</h1>
@@ -55,7 +55,7 @@
                 <!-- Product 1: Alpine Dawn -->
                 <div class="product-card reveal" style="transition-delay: 0.1s;">
                     <div class="product-img">
-                        <img src="/public/assets/beans_light.png" alt="APEX Light Roast">
+                        <img src="./assets/beans_light.png" alt="APEX Light Roast">
                         <div class="sensory-overlay">
                             <!-- Sensory Radar SVG: Alpine Dawn (High Acidity, Light Body) -->
                             <svg width="80" height="80" viewBox="0 0 100 100" class="radar-chart">
@@ -86,7 +86,7 @@
                 <!-- Product 2: Midnight Peak -->
                 <div class="product-card reveal" style="transition-delay: 0.2s;">
                     <div class="product-img">
-                        <img src="/public/assets/beans_dark.png" alt="APEX Dark Roast">
+                        <img src="./assets/beans_dark.png" alt="APEX Dark Roast">
                         <div class="sensory-overlay">
                             <!-- Sensory Radar SVG: Midnight Peak (Low Acidity, Heavy Body) -->
                             <svg width="80" height="80" viewBox="0 0 100 100" class="radar-chart">
@@ -117,7 +117,7 @@
                 <!-- Product 3: Glacier Obsidian -->
                 <div class="product-card reveal" style="transition-delay: 0.3s;">
                     <div class="product-img">
-                        <img src="/public/assets/beans_light.png" alt="APEX Espresso" style="filter: brightness(0.6) contrast(1.2);">
+                        <img src="./assets/beans_light.png" alt="APEX Espresso" style="filter: brightness(0.6) contrast(1.2);">
                         <div class="sensory-overlay">
                             <!-- Sensory Radar SVG: Glacier Obsidian (Balanced, Intense) -->
                             <svg width="80" height="80" viewBox="0 0 100 100" class="radar-chart">
@@ -156,7 +156,7 @@
                 <p>We combine a global, uncompromising standard for organic excellence with the elite focus of the high alpine. This isn't just coffee; it's the culmination of an international search for the absolute peak of the bean's potential.</p>
             </div>
             <div class="story-img reveal">
-                 <img src="/public/assets/story_elite.png" alt="Artisanal coffee processing at altitude" style="border: 1px solid rgba(255,255,255,0.1);">
+                 <img src="./assets/story_elite.png" alt="Artisanal coffee processing at altitude" style="border: 1px solid rgba(255,255,255,0.1);">
             </div>
         </div>
     </section>
@@ -165,7 +165,7 @@
         <div class="container">
             <div class="story-grid">
                 <div class="story-img reveal">
-                    <img src="/public/assets/hero.png" alt="Protecting the Peaks">
+                    <img src="./assets/hero.png" alt="Protecting the Peaks">
                 </div>
                 <div class="story-text reveal">
                     <span class="price">The Apex Initiative</span>
@@ -185,7 +185,21 @@
                 <div class="btn-group reveal" style="justify-content: center;">
                     <a href="#" class="btn btn-primary">Join The Collective</a>
                 </div>
-                <p class="reveal" style="margin-top: 4rem; opacity: 0.3; font-size: 0.7rem;">&copy; 2026 APEX ROASTS. ALL RIGHTS RESERVED. COORDINATES: 39.7392° N, 104.9903° W</p>
+
+                <div class="social-links reveal" style="margin-top: 3rem; display: flex; justify-content: center; gap: 2.5rem;">
+                    <a href="https://github.com/donhawk77/colorado-coffee" target="_blank" class="social-link" title="GitHub Source">
+                        <svg width="24" height="24" viewBox="0 0 19 19" fill="currentColor" xmlns="http://www.w3.org/2000/svg" style="opacity: 0.6;">
+                            <path fill-rule="evenodd" d="M9.356 1.85C5.05 1.85 1.57 5.356 1.57 9.694a7.84 7.84 0 0 0 5.324 7.44c.387.079.528-.168.528-.376 0-.182-.013-.805-.013-1.454-2.165.467-2.616-.935-2.616-.935-.349-.91-.864-1.143-.864-1.143-.71-.48.051-.48.051-.48.787.051 1.2.805 1.2.805.695 1.194 1.817.857 2.268.649.064-.507.27-.857.49-1.052-1.728-.182-3.545-.857-3.545-3.87 0-.857.31-1.558.8-2.104-.078-.195-.349-1 .077-2.078 0 0 .657-.208 2.14.805a7.5 7.5 0 0 1 1.946-.26c.657 0 1.328.092 1.946.26 1.483-1.013 2.14-.805 2.14-.805.426 1.078.155 1.883.078 2.078.502.546.799 1.247.799 2.104 0 3.013-1.818 3.675-3.558 3.87.284.247.528.714.528 1.454 0 1.052-.012 1.896-.012 2.156 0 .208.142.455.528.377a7.84 7.84 0 0 0 5.324-7.441c.013-4.338-3.48-7.844-7.773-7.844" clip-rule="evenodd"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="qr-code reveal" style="margin-top: 5rem; text-align: center;">
+                    <img src="./assets/qr-code.png" alt="APEX Archive QR Code" style="width: 140px; margin: 0 auto; filter: invert(0.05) grayscale(1);">
+                    <p style="font-size: 0.65rem; opacity: 0.3; margin-top: 1.5rem; letter-spacing: 0.2em;">SCAN TO AUTHENTICATE ARCHIVE</p>
+                </div>
+
+                <p class="reveal" style="margin-top: 5rem; opacity: 0.3; font-size: 0.7rem;">&copy; 2026 APEX ROASTS. ALL RIGHTS RESERVED. COORDINATES: 39.7392° N, 104.9903° W</p>
             </div>
         </div>
     </footer>
@@ -356,6 +370,6 @@
         </div>
     </div>
 
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="./main.js"></script>
 </body>
 </html>
