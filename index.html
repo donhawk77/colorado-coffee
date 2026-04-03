@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APEX | High-Altitude Organic Coffee | High-Altitude Organic Coffee</title>
+    <meta name="description" content="Premium, organically sourced coffee beans. Colorado-born, snowboard-inspired. A portion of every sale goes to charity.">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <nav>
+        <div class="container nav-content">
+            <div class="logo">
+                <a href="/">
+                    <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50 10L90 90H10L50 10Z" stroke="#C5A059" stroke-width="2"/>
+                        <path d="M35 60H65" stroke="#C5A059" stroke-width="2"/>
+                        <circle cx="50" cy="45" r="8" stroke="#C5A059" stroke-width="1.5"/>
+                    </svg>
+                    <span style="font-family: var(--font-heading); color: var(--color-gold); letter-spacing: 0.5rem; font-size: 1.2rem; margin-left: 1rem; text-transform: uppercase;">Apex</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#shop">The Apex Archive</a></li>
+                <li><a href="#story">The Heritage</a></li>
+                <li><a href="#charity">Our Impact</a></li>
+                <li><a href="#join">Join The Collective</a></li>
+            </ul>
+            <div id="nav-burger" class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-bg">
+            <img src="/public/assets/hero.png" alt="APEX High Altitude">
+        </div>
+        <div class="container hero-content">
+            <h1 class="reveal">Peak Roast.<br>Pure Apex.</h1>
+            <p>At the intersection of extreme altitude and scientific precision, we cultivate the definitive organic coffee experience for the discerning explorer.</p>
+            <div class="btn-group">
+                <a href="#shop" class="btn btn-primary">Enter The Vault</a>
+                <a href="javascript:void(0)" id="begin-quiz-btn" class="btn btn-outline">Begin The Evaluation</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="shop" class="products section-padding">
+        <div class="container">
+            <h2 class="reveal">The Apex Entries</h2>
+            <div class="product-grid">
+                <!-- Product 1: Alpine Dawn -->
+                <div class="product-card reveal" style="transition-delay: 0.1s;">
+                    <div class="product-img">
+                        <img src="/public/assets/beans_light.png" alt="APEX Light Roast">
+                        <div class="sensory-overlay">
+                            <!-- Sensory Radar SVG: Alpine Dawn (High Acidity, Light Body) -->
+                            <svg width="80" height="80" viewBox="0 0 100 100" class="radar-chart">
+                                <polygon points="50,10 90,50 50,90 10,50" fill="rgba(197, 160, 89, 0.1)" stroke="#C5A059" stroke-width="1" />
+                                <!-- Data: AC:90 BD:30 SW:70 FI:60 -->
+                                <polygon points="50,15 75,50 50,75 25,50" fill="rgba(197, 160, 89, 0.4)" stroke="#C5A059" stroke-width="1.5" />
+                                <text x="50" y="8" text-anchor="middle" font-size="8" fill="#C5A059">AC</text>
+                                <text x="95" y="52" text-anchor="start" font-size="8" fill="#C5A059">BD</text>
+                                <text x="50" y="98" text-anchor="middle" font-size="8" fill="#C5A059">SW</text>
+                                <text x="5" y="52" text-anchor="end" font-size="8" fill="#C5A059">FI</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="price">$38.00 / mo</span>
+                        <h3>Alpine Dawn</h3>
+                        <p>High-altitude wash. Crystallized citrus and sheer mountain clarity.</p>
+                        <div class="meta">
+                            <span>ALT: 2,400M</span>
+                            <span>LOT: SS-012</span>
+                        </div>
+                        <a href="javascript:void(0)" class="provenance-link" data-archive-id="alpine">View Provenance Report</a>
+                        <button class="btn btn-primary w-full">Join The Collective</button>
+                        <a href="#buy-once" class="buy-once">Acquire Single Archive: $42</a>
+                    </div>
+                </div>
+
+                <!-- Product 2: Midnight Peak -->
+                <div class="product-card reveal" style="transition-delay: 0.2s;">
+                    <div class="product-img">
+                        <img src="/public/assets/beans_dark.png" alt="APEX Dark Roast">
+                        <div class="sensory-overlay">
+                            <!-- Sensory Radar SVG: Midnight Peak (Low Acidity, Heavy Body) -->
+                            <svg width="80" height="80" viewBox="0 0 100 100" class="radar-chart">
+                                <polygon points="50,10 90,50 50,90 10,50" fill="rgba(197, 160, 89, 0.1)" stroke="#C5A059" stroke-width="1" />
+                                <!-- Data: AC:40 BD:90 SW:85 FI:70 -->
+                                <polygon points="50,35 85,50 50,85 30,50" fill="rgba(197, 160, 89, 0.4)" stroke="#C5A059" stroke-width="1.5" />
+                                <text x="50" y="8" text-anchor="middle" font-size="8" fill="#C5A059">AC</text>
+                                <text x="95" y="52" text-anchor="start" font-size="8" fill="#C5A059">BD</text>
+                                <text x="50" y="98" text-anchor="middle" font-size="8" fill="#C5A059">SW</text>
+                                <text x="5" y="52" text-anchor="end" font-size="8" fill="#C5A059">FI</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="price">$42.00 / mo</span>
+                        <h3>Midnight Peak</h3>
+                        <p>Slow-dry anaerobic. Velvet finish with intensified mountain smoke.</p>
+                        <div class="meta">
+                            <span>ALT: 2,100M</span>
+                            <span>LOT: SS-044</span>
+                        </div>
+                        <a href="javascript:void(0)" class="provenance-link" data-archive-id="midnight">View Provenance Report</a>
+                        <button class="btn btn-primary w-full">Join The Collective</button>
+                        <a href="#buy-once" class="buy-once">Acquire Single Archive: $46</a>
+                    </div>
+                </div>
+
+                <!-- Product 3: Glacier Obsidian -->
+                <div class="product-card reveal" style="transition-delay: 0.3s;">
+                    <div class="product-img">
+                        <img src="/public/assets/beans_light.png" alt="APEX Espresso" style="filter: brightness(0.6) contrast(1.2);">
+                        <div class="sensory-overlay">
+                            <!-- Sensory Radar SVG: Glacier Obsidian (Balanced, Intense) -->
+                            <svg width="80" height="80" viewBox="0 0 100 100" class="radar-chart">
+                                <polygon points="50,10 90,50 50,90 10,50" fill="rgba(197, 160, 89, 0.1)" stroke="#C5A059" stroke-width="1" />
+                                <!-- Data: AC:70 BD:70 SW:70 FI:90 -->
+                                <polygon points="50,25 70,50 50,70 15,50" fill="rgba(197, 160, 89, 0.4)" stroke="#C5A059" stroke-width="1.5" />
+                                <text x="50" y="8" text-anchor="middle" font-size="8" fill="#C5A059">AC</text>
+                                <text x="95" y="52" text-anchor="start" font-size="8" fill="#C5A059">BD</text>
+                                <text x="50" y="98" text-anchor="middle" font-size="8" fill="#C5A059">SW</text>
+                                <text x="5" y="52" text-anchor="end" font-size="8" fill="#C5A059">FI</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="price">$40.00 / mo</span>
+                        <h3>Glacier Obsidian</h3>
+                        <p>Specialized espresso. Isolated volcanic plateaus with concentrated energy.</p>
+                        <div class="meta">
+                            <span>ALT: 2,650M</span>
+                            <span>LOT: SS-098</span>
+                        </div>
+                        <a href="javascript:void(0)" class="provenance-link" data-archive-id="glacier">View Provenance Report</a>
+                        <button class="btn btn-primary w-full">Join The Collective</button>
+                        <a href="#buy-once" class="buy-once">Acquire Single Archive: $44</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="story" class="story section-padding">
+        <div class="container story-grid">
+            <div class="story-text reveal">
+                <h2>The Pursuit of<br>The Pinnacle.</h2>
+                <p>APEX was founded on a singular premise: that the most complex profiles are forged in the harshest environments. Our beans are sourced exclusively from altitudes exceeding 2,000 meters, where the atmosphere is thin and the character is dense.</p>
+                <p>We combine a global, uncompromising standard for organic excellence with the elite focus of the high alpine. This isn't just coffee; it's the culmination of an international search for the absolute peak of the bean's potential.</p>
+            </div>
+            <div class="story-img reveal">
+                 <img src="/public/assets/story_elite.png" alt="Artisanal coffee processing at altitude" style="border: 1px solid rgba(255,255,255,0.1);">
+            </div>
+        </div>
+    </section>
+
+    <section id="charity" class="charity section-padding">
+        <div class="container">
+            <div class="story-grid">
+                <div class="story-img reveal">
+                    <img src="/public/assets/hero.png" alt="Protecting the Peaks">
+                </div>
+                <div class="story-text reveal">
+                    <span class="price">The Apex Initiative</span>
+                    <h2>Protecting the <br>High Alpine</h2>
+                    <p class="impact">5% of every entry is reinvested into Snowy Horizons.</p>
+                    <p>The peaks that provide our coffee are fragile. APEX is committed to the protection of high-altitude ecosystems and the farming families that inhabit them.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="join">
+        <div class="container">
+            <div class="footer-content">
+                <h2 class="reveal">Access The Vault.</h2>
+                <p class="reveal" style="margin-bottom: 2rem; opacity: 0.5;">Join the APEX Collective for exclusive access to the highest-altitude micro-lots on Earth.</p>
+                <div class="btn-group reveal" style="justify-content: center;">
+                    <a href="#" class="btn btn-primary">Join The Collective</a>
+                </div>
+                <p class="reveal" style="margin-top: 4rem; opacity: 0.3; font-size: 0.7rem;">&copy; 2026 APEX ROASTS. ALL RIGHTS RESERVED. COORDINATES: 39.7392° N, 104.9903° W</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Provenance & Performance Modal -->
+    <div id="provenance-modal" class="modal-overlay">
+        <div class="modal-container">
+            <div id="modal-close-btn" class="modal-close">&times;</div>
+            <div class="provenance-header">
+                <h2 id="modal-title">Archive Entry</h2>
+                <div class="modal-tabs">
+                    <div id="tab-origin" class="modal-tab active" data-tab="origin">The Origin</div>
+                    <div id="tab-extraction" class="modal-tab" data-tab="extraction">The Extraction</div>
+                </div>
+            </div>
+            
+            <!-- Origin Pane (Provenance) -->
+            <div id="pane-origin" class="modal-pane active">
+                <div class="provenance-grid">
+                    <div class="provenance-section">
+                        <h4>The Origin Narrative</h4>
+                        <p id="modal-narrative">Loading archive narrative...</p>
+                    </div>
+                    <div class="provenance-section">
+                        <h4>Advanced Processing</h4>
+                        <p id="modal-processing">Loading processing metrics...</p>
+                    </div>
+                </div>
+                <div class="provenance-metrics">
+                    <div class="metric-item">
+                        <span>Altitude Metric</span>
+                        <span id="modal-alt">-</span>
+                    </div>
+                    <div class="metric-item">
+                        <span>Lot ID / Trace</span>
+                        <span id="modal-lot">-</span>
+                    </div>
+                    <div class="metric-item">
+                        <span>Premium Reinvestment</span>
+                        <span id="modal-premium">-</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Extraction Pane (Performance) -->
+            <div id="pane-extraction" class="modal-pane">
+                <div class="param-grid">
+                    <div class="param-card">
+                        <h5>Standard Ratio</h5>
+                        <span id="modal-ratio" class="value">1:16.4</span>
+                        <span class="label">Precision Archive Weight</span>
+                    </div>
+                    <div class="param-card">
+                        <h5>Water Temp</h5>
+                        <span id="modal-temp" class="value">93.5°C</span>
+                        <span class="label">Gedeh Peak Calibration</span>
+                    </div>
+                    <div class="param-card">
+                        <h5>Grind Micron</h5>
+                        <span id="modal-grind" class="value">740 µm</span>
+                        <span class="label">Obsidian Burrs / V60</span>
+                    </div>
+                </div>
+                <div class="provenance-section" style="margin-top: 4rem;">
+                    <h4>Technical Brewing Strategy</h4>
+                    <p id="modal-brewing">Loading technical extraction protocol...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Archive Evaluation Quiz Overlay -->
+    <div id="archive-quiz" class="quiz-overlay">
+        <div id="quiz-close" class="quiz-close">&times;</div>
+        
+        <div id="quiz-step-1" class="quiz-step active" data-step="1">
+            <h2>Preferred Atmosphere</h2>
+            <p style="opacity: 0.5; margin-bottom: 2rem;">Mapping your primary morning resonance.</p>
+            <div class="quiz-options">
+                <div class="quiz-option" data-value="light">
+                    <h4>The Dawn</h4>
+                    <p>Clarity, elevation, and the translucent buzz of the first peak light.</p>
+                </div>
+                <div class="quiz-option" data-value="dark">
+                    <h4>The Midnight</h4>
+                    <p>Depth, mystery, and the low-oxygen intensity of the obsidian valley.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="quiz-step-2" class="quiz-step" data-step="2">
+            <h2>Textural Resonance</h2>
+            <p style="opacity: 0.5; margin-bottom: 2rem;">Defining your preferred tactile experience.</p>
+            <div class="quiz-options">
+                <div class="quiz-option" data-value="was">
+                    <h4>Crystallized</h4>
+                    <p>Tea-like, crisp, with a focused linear clarity that cuts through the morning.</p>
+                </div>
+                <div class="quiz-option" data-value="ana">
+                    <h4>Velvet</h4>
+                    <p>Viscous, syrupy, with a mouthfeel that lingers after every extraction.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="quiz-step-result" class="quiz-step">
+            <h2>Evaluation Complete</h2>
+            <p style="opacity: 0.5; margin-bottom: 2rem;">Your perfect Archive Entry has been identified.</p>
+            <div id="quiz-result-card" class="quiz-result-card text-reveal">
+                <h3 id="recommended-title">-</h3>
+                <p id="recommended-desc">Calculating archive destination...</p>
+                <div style="margin-top: 3rem;">
+                    <a href="#shop" id="acquire-recommendation" class="btn btn-primary">Enter the Archive</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="quiz-progress">
+            <div id="quiz-progress-fill" class="quiz-progress-fill"></div>
+        </div>
+    </div>
+    
+    <!-- Vault Access Checkout Overlay -->
+    <div id="vault-checkout" class="checkout-overlay">
+        <div id="checkout-close" class="checkout-close">&times;</div>
+        
+        <div class="checkout-main">
+            <div class="checkout-form">
+                <h2>Vault Access</h2>
+                <p style="opacity: 0.5; margin-bottom: 4rem;">Procuring entry into the Apex Archive database.</p>
+                
+                <form id="vault-form">
+                    <div class="form-group">
+                        <label>Delivery Coordinates (Full Name)</label>
+                        <input type="text" placeholder="ARCHIVE MEMBER" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Contact Protocol (Email)</label>
+                        <input type="email" placeholder="AUTHENTICATED EMAIL" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Surface Address</label>
+                        <input type="text" placeholder="DELIVERY LOCATION" required>
+                    </div>
+                    <div style="margin-top: 4rem;">
+                        <button type="submit" class="btn btn-primary w-full">Finalize Archive Entry</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="checkout-sidebar">
+            <div class="entries-summary">
+                <h4>Apex Archive Entry</h4>
+                <div class="summary-item">
+                    <span id="checkout-item-name">Alpine Dawn</span>
+                    <span id="checkout-item-price">$38.00</span>
+                </div>
+                <div class="summary-item" style="opacity: 0.4;">
+                    <span>Security & Logistics</span>
+                    <span>$0.00</span>
+                </div>
+                <div class="summary-item" style="margin-top: 3rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1rem;">
+                    <span>Total Procurement</span>
+                    <span id="checkout-total" style="color: var(--color-gold); font-size: 1.5rem;">$38.00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+</body>
+</html>
