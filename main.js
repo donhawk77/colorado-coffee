@@ -195,7 +195,7 @@ vaultForm.addEventListener('submit', (e) => {
     btn.disabled = true;
     
     setTimeout(() => {
-        alert("ACCESS GRANTED. YOUR APEX ENTRY HAS BEEN AUTHENTICATED AND IS NOW IN THE COURIER VAULT.");
+        alert("ACCESS GRANTED. YOUR APEX SG ENTRY HAS BEEN AUTHENTICATED AND IS NOW IN THE COURIER VAULT.");
         checkoutOverlay.classList.remove('active');
         document.body.style.overflow = 'auto';
         btn.innerText = "Finalize Archive Entry";
@@ -337,7 +337,7 @@ if (loginForm) {
         btn.disabled = true;
 
         setTimeout(() => {
-            alert("ACCESS GRANTED. SYNCING APEX PROFILE DATA & SUBSCRIPTION ARCHIVES.");
+            alert("ACCESS GRANTED. SYNCING APEX SG PROFILE DATA & SUBSCRIPTION ARCHIVES.");
             loginOverlay.classList.remove('active');
             document.body.style.overflow = 'auto';
             btn.innerText = originalText;
@@ -357,4 +357,4 @@ if (loginOverlay) {
     });
 }
 
-console.log('APEX | High-Altitude Roast. Pure Apex.');
+console.log('APEX SG | High-Altitude Roast. Pure Apex SG.');

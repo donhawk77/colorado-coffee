@@ -1,4 +1,4 @@
-# APEX | High-Altitude Organic Coffee 🏔️☕
+# APEX SG | High-Altitude Organic Coffee 🏔️☕
 
 At the intersection of extreme altitude and scientific precision, APEX cultivates the definitive organic coffee experience for the discerning explorer. Forged in the harsh environments above 2,000 meters, our beans are complex, dense, and uncompromisingly high in quality.
 
