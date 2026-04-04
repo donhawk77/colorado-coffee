@@ -8,6 +8,7 @@ At the intersection of extreme altitude and scientific precision, APEX cultivate
 - **Scientific Precision**: Data-driven extraction protocols for perfect brewing performance.
 - **Sustainable & Socially Responsible**: A portion of every sale supports high-altitude eco-protection through the APEX Initiative.
 - **Premium User Experience**: Interactive sensory mapping and evaluation tools to find your perfect archive entry.
+- **Vault Membership Access**: Secured decryption-based profile synchronization for elite members of the APEX Collective.
 
 ## Project Structure 📁
 

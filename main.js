@@ -45,7 +45,11 @@ const modalData = {
         ratio: "1:16.8",
         temp: "92.5°C",
         grind: "720 µm",
-        brewing: "We recommend a high-agitation pour for Alpine Dawn. Start with a 3x bloom for 45 seconds to unlock the citrus clarity. Use a slow, circular pour to maintain a constant thermal mass. Target a total drawdown time of 3 minutes and 15 seconds."
+        brewing: "We recommend a high-agitation pour for Alpine Dawn. Start with a 3x bloom for 45 seconds to unlock the citrus clarity. Use a slow, circular pour to maintain a constant thermal mass. Target a total drawdown time of 3 minutes and 15 seconds.",
+        green: "$5.12 / lb",
+        market: "$2.88 / lb",
+        score: "87.5 / 100",
+        tier: "Specialty High-Alpine"
     },
     midnight: {
         title: "Midnight Peak",
@@ -57,7 +61,11 @@ const modalData = {
         ratio: "1:15.5",
         temp: "94.0°C",
         grind: "850 µm",
-        brewing: "Midnight Peak requires a higher temperature to penetrate its anaerobic structure. We suggest a 1:15.5 ratio for a syrup-like body. Minimize agitation to prevent over-extraction of the deep smokiness. Best enjoyed in a Chemex at coarse settings."
+        brewing: "Midnight Peak requires a higher temperature to penetrate its anaerobic structure. We suggest a 1:15.5 ratio for a syrup-like body. Minimize agitation to prevent over-extraction of the deep smokiness. Best enjoyed in a Chemex at coarse settings.",
+        green: "$5.45 / lb",
+        market: "$3.05 / lb",
+        score: "89.0 / 100",
+        tier: "Limited Edition Reserve"
     },
     glacier: {
         title: "Glacier Obsidian",
@@ -69,7 +77,11 @@ const modalData = {
         ratio: "1:2.1 (Espresso)",
         temp: "93.0°C",
         grind: "240 µm",
-        brewing: "For Glacier Obsidian, we target a concentrated 1:2.1 extraction. Pre-infuse for 8 seconds at 3 bars, followed by a flat 9-bar ramp. The geothermal density allows for high extraction yields without astringency. Expect a viscous, obsidian-dark crema."
+        brewing: "For Glacier Obsidian, we target a concentrated 1:2.1 extraction. Pre-infuse for 8 seconds at 3 bars, followed by a flat 9-bar ramp. The geothermal density allows for high extraction yields without astringency. Expect a viscous, obsidian-dark crema.",
+        green: "$5.88 / lb",
+        market: "$3.20 / lb",
+        score: "89.5 / 100",
+        tier: "Competition Signature"
     }
 };
 
@@ -96,6 +108,12 @@ document.querySelectorAll('.provenance-link').forEach(link => {
         document.getElementById('modal-temp').innerText = data.temp;
         document.getElementById('modal-grind').innerText = data.grind;
         document.getElementById('modal-brewing').innerText = data.brewing;
+        
+        // Populate Transparency
+        document.getElementById('modal-green').innerText = data.green;
+        document.getElementById('modal-market').innerText = data.market;
+        document.getElementById('modal-score').innerText = data.score;
+        document.getElementById('modal-tier').innerText = data.tier;
         
         // Reset to Origin tab
         tabs.forEach(t => t.classList.remove('active'));
@@ -289,5 +307,54 @@ window.addEventListener('scroll', () => {
         nav.style.position = 'absolute';
     }
 });
+
+// Vault Login Modal Logic
+const loginOverlay = document.getElementById('vault-login');
+const openLoginBtn = document.getElementById('open-login');
+const loginClose = document.getElementById('login-close');
+const loginForm = document.getElementById('login-form');
+
+if (openLoginBtn) {
+    openLoginBtn.addEventListener('click', () => {
+        loginOverlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    });
+}
+
+if (loginClose) {
+    loginClose.addEventListener('click', () => {
+        loginOverlay.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    });
+}
+
+if (loginForm) {
+    loginForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const btn = loginForm.querySelector('button');
+        const originalText = btn.innerText;
+        btn.innerText = "TRACE-DB: DECRYPTING PROFILE...";
+        btn.disabled = true;
+
+        setTimeout(() => {
+            alert("ACCESS GRANTED. SYNCING APEX PROFILE DATA & SUBSCRIPTION ARCHIVES.");
+            loginOverlay.classList.remove('active');
+            document.body.style.overflow = 'auto';
+            btn.innerText = originalText;
+            btn.disabled = false;
+            loginForm.reset();
+        }, 2500);
+    });
+}
+
+// Close login modal on outside click
+if (loginOverlay) {
+    loginOverlay.addEventListener('click', (e) => {
+        if (e.target === loginOverlay) {
+            loginOverlay.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+    });
+}
 
 console.log('APEX | High-Altitude Roast. Pure Apex.');

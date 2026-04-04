@@ -24,7 +24,7 @@
                 <li><a href="#shop">The Apex Archive</a></li>
                 <li><a href="#story">The Heritage</a></li>
                 <li><a href="#charity">Our Impact</a></li>
-                <li><a href="#join">Join The Collective</a></li>
+                <li><a href="javascript:void(0)" id="open-login" style="color: var(--color-gold); font-weight: 600;">Vault Access</a></li>
             </ul>
             <div id="nav-burger" class="burger">
                 <div class="line1"></div>
@@ -213,6 +213,7 @@
                 <div class="modal-tabs">
                     <div id="tab-origin" class="modal-tab active" data-tab="origin">The Origin</div>
                     <div id="tab-extraction" class="modal-tab" data-tab="extraction">The Extraction</div>
+                    <div id="tab-transparency" class="modal-tab" data-tab="transparency">The Transparency</div>
                 </div>
             </div>
             
@@ -266,6 +267,34 @@
                 <div class="provenance-section" style="margin-top: 4rem;">
                     <h4>Technical Brewing Strategy</h4>
                     <p id="modal-brewing">Loading technical extraction protocol...</p>
+                </div>
+            </div>
+
+            <!-- Transparency Pane (The Vault) -->
+            <div id="pane-transparency" class="modal-pane">
+                <div class="transparency-vault">
+                    <div class="vault-header">
+                        <h4>Financial Traceability Archive</h4>
+                        <p style="opacity: 0.5; margin-bottom: 3rem;">Direct verification of the Apex Premium reinvestment model.</p>
+                    </div>
+                    <div class="vault-table">
+                        <div class="vault-row">
+                            <span>Apex Green Cost (Paid To Estate)</span>
+                            <span id="modal-green" class="value-gold">-</span>
+                        </div>
+                        <div class="vault-row">
+                            <span>Fair Trade / Market Average</span>
+                            <span id="modal-market">-</span>
+                        </div>
+                        <div class="vault-row">
+                            <span>SCA Cup Score (Verified)</span>
+                            <span id="modal-score" class="value-gold">-</span>
+                        </div>
+                        <div class="vault-row">
+                            <span>Archive Tier</span>
+                            <span id="modal-tier" class="value-gold">-</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -366,6 +395,37 @@
                     <span>Total Procurement</span>
                     <span id="checkout-total" style="color: var(--color-gold); font-size: 1.5rem;">$38.00</span>
                 </div>
+            </div>
+        </div>
+    </div>
+
+        </div>
+    </div>
+
+    <!-- Vault Access Login Modal -->
+    <div id="vault-login" class="modal-overlay">
+        <div class="modal-container" style="max-width: 500px; padding: 5rem;">
+            <div id="login-close" class="modal-close">&times;</div>
+            <div class="login-form">
+                <h2 style="font-size: 2.2rem; margin-bottom: 1rem; color: var(--color-gold);">Vault Access</h2>
+                <p style="opacity: 0.4; font-size: 0.7rem; letter-spacing: 0.2rem; margin-bottom: 4rem;">AUTHENTICATE YOUR APEX PROFILE</p>
+                
+                <form id="login-form">
+                    <div class="form-group" style="margin-bottom: 2rem;">
+                        <label style="font-size: 0.6rem; opacity: 0.5; text-transform: uppercase;">Membership ID</label>
+                        <input type="email" placeholder="EMAIL ADDRESS" required style="width: 100%; padding: 1.2rem 0; background: transparent; border: none; border-bottom: 1px solid rgba(255,255,255,0.1); color: white; font-family: var(--font-body);">
+                    </div>
+                    <div class="form-group" style="margin-bottom: 4rem;">
+                        <label style="font-size: 0.6rem; opacity: 0.5; text-transform: uppercase;">Access Key</label>
+                        <input type="password" placeholder="PASSWORD" required style="width: 100%; padding: 1.2rem 0; background: transparent; border: none; border-bottom: 1px solid rgba(255,255,255,0.1); color: white; font-family: var(--font-body);">
+                    </div>
+                    <button type="submit" class="btn btn-primary w-full">Initiate Decryption</button>
+                    
+                    <div style="margin-top: 2.5rem; display: flex; justify-content: space-between; font-size: 0.6rem; opacity: 0.3; letter-spacing: 0.1em;">
+                        <a href="#" style="text-decoration: underline;">FORGOT ACCESS KEY</a>
+                        <a href="#join" style="text-decoration: underline;">JOIN THE COLLECTIVE</a>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
