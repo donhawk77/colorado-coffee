@@ -3,18 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THE HERITAGE | APEX SG Field Collective</title>
-    <meta name="description" content="Official Field Archive. Mapping the high-altitude labor and lineage of APEX SG.">
+    <title>TECHNICAL ARCHIVE | APEX SG Geospatial Ledger</title>
+    <meta name="description" content="Official Technical Archive. Geospatial mapping and chemical soil analysis of the APEX SG Collective.">
     <link rel="stylesheet" href="./style.css">
     <style>
-        .heritage-stream { max-width: 900px; margin: 0 auto; padding: 5rem 2rem; }
-        .heritage-entry { margin-bottom: 6rem; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 4rem; }
-        .heritage-entry:last-child { border-bottom: none; }
-        .entry-meta { font-size: 0.65rem; color: var(--color-gold); letter-spacing: 0.2rem; margin-bottom: 1rem; text-transform: uppercase; }
-        .entry-image { position: relative; margin-bottom: 2rem; border: 1px solid rgba(255,255,255,0.1); width: 100%; height: auto; }
-        .batch-id-tag { position: absolute; top: 1rem; right: 1rem; background: rgba(0,0,0,0.8); border: 1px solid var(--color-gold); padding: 0.5rem 1rem; font-size: 0.6rem; color: var(--color-gold); letter-spacing: 0.1rem; }
-        .entry-content { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
-        @media (max-width: 768px) { .entry-content { grid-template-columns: 1fr; gap: 2rem; } }
+        .technical-stream { max-width: 1000px; margin: 0 auto; padding: 5rem 2rem; }
+        .dossier-entry { margin-bottom: 8rem; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 6rem; }
+        .dossier-entry:last-child { border-bottom: none; }
+        .dossier-meta { font-size: 0.6rem; color: var(--color-gold); letter-spacing: 0.3rem; margin-bottom: 1.5rem; text-transform: uppercase; border-left: 2px solid var(--color-gold); padding-left: 1rem; }
+        .dossier-image { position: relative; margin-bottom: 2.5rem; border: 1px solid rgba(255,255,255,0.05); overflow: hidden; aspect-ratio: 16 / 9; }
+        .dossier-image img { width: 100%; height: 100%; object-fit: cover; }
+        .dossier-badge { position: absolute; top: 1.5rem; right: 1.5rem; background: rgba(0,0,0,0.9); border: 1px solid rgba(255,255,255,0.1); padding: 0.8rem 1.2rem; font-size: 0.6rem; color: var(--color-gold); letter-spacing: 0.2rem; }
+        .dossier-content { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
+        .data-point { margin-bottom: 2rem; }
+        .data-label { display: block; font-size: 0.6rem; color: var(--color-gold); letter-spacing: 0.1rem; text-transform: uppercase; margin-bottom: 0.5rem; opacity: 0.6; }
+        .data-value { font-family: monospace; font-size: 0.9rem; letter-spacing: 0.05rem; }
+        @media (max-width: 768px) { .dossier-content { grid-template-columns: 1fr; gap: 3rem; } }
     </style>
 </head>
 <body class="heritage-page">
@@ -30,74 +34,85 @@
             </div>
             <ul class="nav-links">
                 <li><a href="./index.html#shop">The Archive</a></li>
-                <li><a href="./heritage.html" class="active">The Heritage</a></li>
+                <li><a href="./heritage.html" class="active">Technical Vault</a></li>
                 <li><a href="./index.html#charity">Our Impact</a></li>
             </ul>
         </div>
     </nav>
 
-    <header style="padding-top: 10rem; padding-bottom: 4rem; border-bottom: 1px solid rgba(255,255,255,0.05); text-align: left;" class="container">
-        <h1 style="text-transform: uppercase; font-size: 3rem; letter-spacing: 0.5rem; color: var(--color-gold);">Field Documentation</h1>
-        <p style="opacity: 0.4; letter-spacing: 0.1rem; font-size: 0.8rem;">OFFICIAL COLLECTIVE RECORDS. APEX SG SIGNATURE GRADE.</p>
+    <header style="padding-top: 12rem; padding-bottom: 6rem; border-bottom: 1px solid rgba(255,255,255,0.05); text-align: left;" class="container">
+        <h1 style="text-transform: uppercase; font-size: 2.5rem; letter-spacing: 0.8rem; color: var(--color-gold); line-height: 1.2;">Technical Archive:<br>Geospatial Ledger</h1>
+        <p style="opacity: 0.4; letter-spacing: 0.2rem; font-size: 0.7rem; margin-top: 1.5rem; text-transform: uppercase;">VERIFIED DATA-FLOW // APEX SG VAULT AUTHENTICATED</p>
     </header>
 
-    <main class="heritage-stream">
+    <main class="technical-stream">
         
-        <!-- Entry 01: THE LABOR (Action Hands First) -->
-        <article class="heritage-entry reveal">
-            <div class="entry-meta">ENTRY: 001_ARCHIVE / THE HANDS OF LINEAGE</div>
-            <div class="entry-image">
-                <img src="./assets/heritage/action_hands.png" alt="Elder picking coffee cherries" style="width: 100%; display: block;">
-                <div class="batch-id-tag">SEED: SG_2026_001_GEN</div>
+        <!-- Entry 01: SATELLITE CARTOGRAPHY -->
+        <article class="dossier-entry reveal">
+            <div class="dossier-meta">GEOSPATIAL ENTRY: 001_GEDEH / JAVA_ID</div>
+            <div class="dossier-image">
+                <img src="./assets/heritage/topo_satellite.png" alt="Satellite topography of Gedeh Estate">
+                <div class="dossier-badge">WGS84_UTM_ZONE_48M</div>
             </div>
-            <div class="entry-content">
+            <div class="dossier-content">
                 <div>
-                    <h2 style="font-size: 1.8rem; margin-bottom: 1.5rem;">The Act of Defiance.</h2>
-                    <p style="font-style: italic; font-size: 1.1rem; line-height: 1.6; opacity: 0.8;">"A high-altitude harvest is an act of defiance. We don't just grow coffee; we protect a lineage of resilience."</p>
+                    <h2 style="font-size: 1.5rem; line-height: 1.4; margin-bottom: 2rem;">Estate Ridges: <br>Volcanic Geothermal Cartography.</h2>
+                    <p style="font-size: 0.85rem; opacity: 0.6; line-height: 1.8;">Technical documentation of the Gedeh Ridge. Elevation gradients exceed 45 degrees, necessitating specialized high-altitude porterage services. Geothermal activity at the core provides the nitrogen-rich volcanic baseline required for Signature Grade selection.</p>
                 </div>
-                <div>
-                    <p style="font-size: 0.85rem; opacity: 0.5; line-height: 1.8;">FIELD NOTE: Every Signature Grade lot is hand-tended by elders who possess the technical and ancestral knowledge of seven generations. The speed and delicacy displayed in this mid-action harvest (B-Ref: 2026-X) are definitive of the SG standard.</p>
-                    <p style="margin-top: 1rem; font-weight: 900; letter-spacing: 0.1rem; font-size: 0.7rem; text-transform: uppercase;">— THE SITORUS FAMILY, THE GEDEH COLLECTIVE</p>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                    <div class="data-point"><span class="data-label">Coordinate Ref</span><span class="data-value">6.746° S, 106.98° E</span></div>
+                    <div class="data-point"><span class="data-label">Peak Elevation</span><span class="data-value">2,958m ASL</span></div>
+                    <div class="data-point"><span class="data-label">Slope Gradient</span><span class="data-value">38° to 52°</span></div>
+                    <div class="data-point"><span class="data-label">Terrace Count</span><span class="data-value">540 Isolated Lots</span></div>
                 </div>
             </div>
         </article>
 
-        <!-- Entry 02: THE LABOR (Raking) -->
-        <article class="heritage-entry reveal">
-            <div class="entry-meta">ENTRY: 002_ARCHIVE / THE STONE TERRACE LABOR</div>
-            <div class="entry-image">
-                <img src="./assets/heritage/action_raking.png" alt="Raking green coffee beans" style="width: 100%; display: block; filter: grayscale(10%);">
-                <div class="batch-id-tag">BATCH: JAVA_2026_TERRACE_01</div>
+        <!-- Entry 02: TOPOGRAPHIC SCHEMATIC -->
+        <article class="dossier-entry reveal">
+            <div class="dossier-meta">GEOSPATIAL ENTRY: 002_SHADOW / HUILA_COL</div>
+            <div class="dossier-image">
+                <img src="./assets/heritage/topo_schematic.png" alt="Topographic schematic of Shadow Valley">
+                <div class="dossier-badge">LOC-REF: HUILA_09_ALT</div>
             </div>
-            <div class="entry-content">
+            <div class="dossier-content">
                 <div>
-                    <h2 style="font-size: 1.8rem; margin-bottom: 1.5rem;">Intense Focus. <br>The Stone Beds.</h2>
-                    <p style="font-size: 0.85rem; opacity: 0.6; line-height: 1.8;">Java, Indonesia. 1.8617° N, 76.0469° W. A volcanic geothermal terrace where the Sitorus family manages over 500 micro-lots. The geothermal soil provides the high-density acidity definitive of APEX SG.</p>
+                    <h2 style="font-size: 1.5rem; line-height: 1.4; margin-bottom: 2rem;">Shadow Valley: <br>Topographic Terrain Architecture.</h2>
+                    <p style="font-size: 0.85rem; opacity: 0.6; line-height: 1.8;">Terrain architecture scan of the Huila Andean lot. The unique 'Sombra' (Shadow) effect created by the steep eastern ridges reduces UV exposure on the cherries, extending the ripening period and concentrating organic acids in the mucilage.</p>
                 </div>
-                <div style="padding-left: 2rem; border-left: 1px solid rgba(255,255,255,0.05);">
-                    <p style="font-size: 0.85rem; opacity: 0.5; line-height: 1.8;">FIELD NOTE: Raking mid-harvest ensures uniform drying. In this candid shot from LOC-01, the intense labor required to maintain thermal stability on the stone beds is visible. Heat management is the heartbeat of our Jakarta archive entries.</p>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                    <div class="data-point"><span class="data-label">Rainfall Catchment</span><span class="data-value">1800mm annually</span></div>
+                    <div class="data-point"><span class="data-label">Micro-Lot Area</span><span class="data-value">12.4 Hectares</span></div>
+                    <div class="data-point"><span class="data-label">Aspect Orientation</span><span class="data-value">North-West Exposed</span></div>
+                    <div class="data-point"><span class="data-label">Soil Variety</span><span class="data-value">Volcanic Ash/Clay</span></div>
                 </div>
             </div>
         </article>
 
-        <!-- Entry 03: THE HUMAN (Grower Selfie) -->
-        <article class="heritage-entry reveal">
-            <div class="entry-meta">ENTRY: 003_ARCHIVE / THE FIELD COORDINATE SELFIE</div>
-            <div class="entry-image">
-                <img src="./assets/heritage/selfie_grower.png" alt="Spontaneous selfie from Ethiopian grower" style="width: 100%; display: block;">
-                <div class="batch-id-tag">BATCH: COL_2026_ARCHIVE_01</div>
+        <!-- Entry 03: CHEMICAL SOIL DATA -->
+        <article class="dossier-entry reveal">
+            <div class="dossier-meta">CHEMICAL ENTRY: 003_SOIL / NITROGEN_PROFILE</div>
+            <div class="dossier-image">
+                <img src="./assets/heritage/soil_analysis.png" alt="Soil analysis chemical plot">
+                <div class="dossier-badge">SYS: HP-IC / ESI-MS/MS</div>
             </div>
-            <div class="entry-content">
-                <div style="grid-column: 1 / -1;">
-                    <h2 style="font-size: 1.8rem; margin-bottom: 2rem; color: var(--color-gold);">Shadow Valley <br>The Human Connection.</h2>
-                    <p style="font-size: 0.9rem; opacity: 0.7; line-height: 1.8; max-width: 700px;">A spontaneous candid from the Colombian Andean precipice. While the foreground reflects the warmth of our partnership, his family is visible in the background unintentionally—performing the critical work of loading heavy jute bags for the high-altitude courier vault.</p>
+            <div class="dossier-content">
+                <div>
+                    <h2 style="font-size: 1.5rem; line-height: 1.4; margin-bottom: 2rem;">Chemical Integrity: <br>Volcanic Soil Acidity Profile.</h2>
+                    <p style="font-size: 0.85rem; opacity: 0.6; line-height: 1.8;">Official chromatogram data for volcanic ash soil speciation. The high concentration of free amino acids and nitrogen speciation metrics (B-Ref: 2026-X) are specific to the Reykjanes Rift volcanic corridor, providing the heavy body and fruit-forward acidity definitive of the SG archive.</p>
+                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                    <div class="data-point"><span class="data-label">pH Level</span><span class="data-value">4.1 (Extremely Acidic)</span></div>
+                    <div class="data-point"><span class="data-label">Nitrogen Index</span><span class="data-value">0.85 TN Relative</span></div>
+                    <div class="data-point"><span class="data-label">Ammonium Peaks</span><span class="data-value">8.42 mAU / 12.2m</span></div>
+                    <div class="data-point"><span class="data-label">System Status</span><span class="data-value">DATA_VERIFIED_100</span></div>
                 </div>
             </div>
         </article>
 
     </main>
 
-    <footer style="padding: 5rem 0; border-top: 1px solid rgba(255,255,255,0.05); text-align: center;">
+    <footer style="padding: 6rem 0; border-top: 1px solid rgba(255,255,255,0.05); text-align: center;">
         <div class="container">
              <div class="logo" style="justify-content: center; margin-bottom: 2rem;">
                 <a href="./index.html">
@@ -107,7 +122,7 @@
                     <span style="font-family: var(--font-heading); color: var(--color-gold); letter-spacing: 0.4rem; font-size: 1.1rem; margin-left: 1rem; text-transform: uppercase; font-weight: 900;">Apex SG</span>
                 </a>
             </div>
-            <p style="opacity: 0.2; font-size: 0.65rem;">&copy; 2026 APEX SG FIELD COLLECTIVE. ARCHIVE BATCH: DOCUMENTATION-REF-09-V.</p>
+            <p style="opacity: 0.3; font-size: 0.6rem; letter-spacing: 0.1rem;">&copy; 2026 APEX SG TECHNICAL ARCHIVE. <br>ALL GEOSPATIAL AND CHEMICAL DATA VERIFIED BY THE COLLECTIVE VAULT.</p>
         </div>
     </footer>
 
