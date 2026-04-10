@@ -134,15 +134,14 @@
             </div>
 
             <div class="fund-allocation reveal">
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
-                    <h4 style="color: var(--color-gold); letter-spacing: 0.2em; text-transform: uppercase; font-size: 0.8rem; margin: 0;">Use of $85,000 Capital</h4>
-                    <button id="open-fund-modal" class="btn btn-outline" style="padding: 0.5rem 1.5rem; font-size: 0.6rem;">Deep Dive</button>
-                </div>
+            <div class="fund-allocation reveal">
+                <h4 style="color: var(--color-gold); letter-spacing: 0.2em; text-transform: uppercase; font-size: 0.8rem; margin-bottom: 2rem;">Use of $85,000 Capital</h4>
                 
                 <div class="fund-row">
                     <div class="label">
                         <strong>Green Coffee Forward Flow (41%)</strong>
-                        Premium farmgate allocations paid directly to smallholder producers via designated bridge importers.
+                        Premium farmgate allocations paid directly to smallholder producers.
+                        <a href="javascript:void(0)" class="open-modal-btn" data-target="modal-green" style="display: block; margin-top: 0.5rem; color: var(--color-gold); font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;">Learn More: Actual Supplier Breakdown</a>
                     </div>
                     <div class="value">$35,000</div>
                 </div>
@@ -150,6 +149,7 @@
                     <div class="label">
                         <strong>Production & Fulfillment Tech (23%)</strong>
                         Toll-roast reserving, localized packaging fulfillment, and authenticated QR pressing.
+                        <a href="javascript:void(0)" class="open-modal-btn" data-target="modal-tech" style="display: block; margin-top: 0.5rem; color: var(--color-gold); font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;">Learn More: Tech Allocation</a>
                     </div>
                     <div class="value">$20,000</div>
                 </div>
@@ -157,6 +157,7 @@
                     <div class="label">
                         <strong>Digital Launch & Local Cultivation (21%)</strong>
                         Funding the completion of the Vault Architecture, Sensory Evaluation QA, and grassroots tastings. 
+                        <a href="javascript:void(0)" class="open-modal-btn" data-target="modal-launch" style="display: block; margin-top: 0.5rem; color: var(--color-gold); font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;">Learn More: Digital Cultivation</a>
                     </div>
                     <div class="value">$18,000</div>
                 </div>
@@ -164,6 +165,7 @@
                     <div class="label">
                         <strong>Origin Operations & Stewardship (15%)</strong>
                         Farmer stewardship travel and capturing documentary-grade evidence for the Heritage Archive.
+                        <a href="javascript:void(0)" class="open-modal-btn" data-target="modal-ops" style="display: block; margin-top: 0.5rem; color: var(--color-gold); font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;">Learn More: Origin Operations</a>
                     </div>
                     <div class="value">$12,000</div>
                 </div>
@@ -232,17 +234,63 @@
         </div>
     </footer>
 
-    <div id="fund-modal" class="modal-overlay">
-        <div class="modal-container" style="max-width: 600px;">
-            <div id="close-fund-modal" class="modal-close">&times;</div>
-            <h2 style="font-size: 2rem; color: var(--color-gold); margin-bottom: 2rem;">Capital Deep Dive</h2>
-            <p style="font-size: 0.9rem; opacity: 0.8; margin-bottom: 1.5rem;">The $85,000 raise provides a 12-month operational runway, heavily weighted towards direct asset acquisition rather than bloated marketing.</p>
-            <ul style="list-style: none; padding: 0; font-size: 0.85rem; opacity: 0.7;">
-                <li style="margin-bottom: 1.5rem;"><strong>$35,000 - Green Coffee:</strong> Secures ~3,500 lbs of elite green coffee across our 3 identified producers, assuming a blended average of $10/lb.</li>
-                <li style="margin-bottom: 1.5rem;"><strong>$20,000 - Tech & Production:</strong> Funds the reserve toll-roasting contracts ensuring we never buy roasting equipment. Covers the custom foil bag production and cryptographic QR tags for 1 year.</li>
-                <li style="margin-bottom: 1.5rem;"><strong>$18,000 - Local Cultivation:</strong> Grassroots digital launch, sensory evaluation QA sessions, and local investor/influencer "Vault Screenings" to drive exclusive subscriptions.</li>
-                <li style="margin-bottom: 1.5rem;"><strong>$12,000 - Origin Ops:</strong> Travel to the SCA Expo and 1 origin trip to finalize contracts and shoot 4K archival footage for the Provenance ledger.</li>
-            </ul>
+    <!-- Modal 1: Green Coffee -->
+    <div id="modal-green" class="modal-overlay">
+        <div class="modal-container" style="max-width: 800px; text-align: left;">
+            <div class="modal-close close-fund-modal">&times;</div>
+            <h2 style="font-size: 2rem; color: var(--color-gold); margin-bottom: 2rem;">Green Coffee Sourcing Reality</h2>
+            <div style="font-size: 0.9rem; opacity: 0.8; line-height: 1.6; max-height: 50vh; overflow-y: auto; padding-right: 1rem;">
+                <p><strong>1. Alpine Dawn (2,400M Washed)</strong><br>
+                <em>Identified Suppliers:</em> Genuine Origin or direct via Dogo Sodu (Guji, Ethiopia) & Finca El Obraje (Nariño, Colombia).<br>
+                <em>Actual Product:</em> Ethiopia Organic Guji Uraga G2 Washed or Colombia Nariño Supremo.<br>
+                <em>Verified Market Cost:</em> $6.46–$6.56 / lb.<br>
+                <em>Execution:</em> Sourced from the garden farmers of the Dogo Sodu washing station or extreme-altitude pioneer Pablo Guerrero. This verifies our $7.50 target COGS per bag perfectly.</p>
+                <hr style="border-color: rgba(255,255,255,0.1); margin: 1.5rem 0;">
+                <p><strong>2. Midnight Peak (2,100M Slow-Dry Anaerobic)</strong><br>
+                <em>Identified Suppliers:</em> Coffee Shrub (Sweet Maria's) or direct via Finca El Paraíso.<br>
+                <em>Actual Product:</em> Colombia Huila/Cauca Anaerobic Microlot.<br>
+                <em>Verified Market Cost:</em> $10.50–$12.50 / lb.<br>
+                <em>Execution:</em> Partnering with tech-driven producers like Diego Bermudez, operating localized yeast strains and thermal-shock washing. Our $10.50 margin per bag securely covers these 50lb reserve bags.</p>
+                <hr style="border-color: rgba(255,255,255,0.1); margin: 1.5rem 0;">
+                <p><strong>3. Glacier Obsidian (2,650M Volcanic)</strong><br>
+                <em>Identified Suppliers:</em> Royal Coffee (Crown Jewels program) or Cafe Imports / Qima Coffee.<br>
+                <em>Actual Product:</em> Ecuador Pichincha Volcanic Microlot or Yemen Haraaz Red.<br>
+                <em>Verified Market Cost:</em> $8.50–$14.00 / lb.<br>
+                <em>Execution:</em> Sourcing from Pepe Jijón (Finca Soledad) in Ecuador's extreme cloud-forest, or the Bani Ofir community on Yemen’s volcanic terraces. Purchasing in 22lb micro-boxes allows us elite access without buying full maritime containers.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2: Tech -->
+    <div id="modal-tech" class="modal-overlay">
+        <div class="modal-container" style="max-width: 600px; text-align: left;">
+            <div class="modal-close close-fund-modal">&times;</div>
+            <h2 style="font-size: 2rem; color: var(--color-gold); margin-bottom: 2rem;">Production & Fulfillment Tech</h2>
+            <p style="font-size: 0.9rem; opacity: 0.8; line-height: 1.6;">
+                By utilizing <strong>toll-roasting</strong> agreements with established local facilities, we circumvent the massive capital expenditure of buying industrial Loring or Probat roasters. The remaining budget goes entirely into the APEX SG packaging experience: deep-matte foil bags, heavy-stock typography labels, and securing the cryptographic QR code engine required for the Vault provenance ledger.
+            </p>
+        </div>
+    </div>
+
+    <!-- Modal 3: Launch -->
+    <div id="modal-launch" class="modal-overlay">
+        <div class="modal-container" style="max-width: 600px; text-align: left;">
+            <div class="modal-close close-fund-modal">&times;</div>
+            <h2 style="font-size: 2rem; color: var(--color-gold); margin-bottom: 2rem;">Digital Launch & QA</h2>
+            <p style="font-size: 0.9rem; opacity: 0.8; line-height: 1.6;">
+                Mass-market digital advertising will destroy our exclusivity. This $18k is hyper-focused on our <strong>Grassroots Vault Screenings</strong>: physical invite-only tasting events locally, equipping early adopters with sensory evaluation charts. Simultaneously, the digital budget finalizes the Stripe-integrated, encrypted Vault access portal to lock our subscription base behind a secure wall.
+            </p>
+        </div>
+    </div>
+
+    <!-- Modal 4: Origin Ops -->
+    <div id="modal-ops" class="modal-overlay">
+        <div class="modal-container" style="max-width: 600px; text-align: left;">
+            <div class="modal-close close-fund-modal">&times;</div>
+            <h2 style="font-size: 2rem; color: var(--color-gold); margin-bottom: 2rem;">Origin Operations</h2>
+            <p style="font-size: 0.9rem; opacity: 0.8; line-height: 1.6;">
+                To justify a $40 ultra-premium retail bag, we must prove the provenance entirely. This $12,000 allocation secures travel to the annual SCA Expo to physically lock contracts with the bridge importers and farmers, as well as one primary Origin Trip to capture stunning, 50mm f/1.4 documentary-grade media of the stewardship and harvest process for the APEX SG Heritage Archive.
+            </p>
         </div>
     </div>
 
@@ -250,22 +298,29 @@
         const revealElements = document.querySelectorAll('.reveal');
         revealElements.forEach(el => el.classList.add('active'));
 
-        // Modal Logic
-        const fundModal = document.getElementById('fund-modal');
-        const openFundBtn = document.getElementById('open-fund-modal');
-        const closeFundBtn = document.getElementById('close-fund-modal');
+        // Multiple Modal Logic
+        const updateModals = document.querySelectorAll('.open-modal-btn');
+        const allModals = document.querySelectorAll('.modal-overlay');
+        const closeBtns = document.querySelectorAll('.close-fund-modal');
 
-        if(openFundBtn) {
-            openFundBtn.addEventListener('click', () => {
-                fundModal.classList.add('active');
+        updateModals.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const targetId = btn.getAttribute('data-target');
+                document.getElementById(targetId).classList.add('active');
             });
-            closeFundBtn.addEventListener('click', () => {
-                fundModal.classList.remove('active');
+        });
+
+        closeBtns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.target.closest('.modal-overlay').classList.remove('active');
             });
-            fundModal.addEventListener('click', (e) => {
-                if (e.target === fundModal) fundModal.classList.remove('active');
+        });
+
+        allModals.forEach(modal => {
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) modal.classList.remove('active');
             });
-        }
+        });
     </script>
 </body>
 </html>
