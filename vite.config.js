@@ -7,7 +7,8 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        heritage: resolve(__dirname, 'heritage.html')
+        heritage: resolve(__dirname, 'heritage.html'),
+        investor: resolve(__dirname, 'investor.html')
       }
     }
   }
