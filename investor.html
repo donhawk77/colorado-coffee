@@ -134,7 +134,10 @@
             </div>
 
             <div class="fund-allocation reveal">
-                <h4 style="color: var(--color-gold); letter-spacing: 0.2em; text-transform: uppercase; font-size: 0.8rem; margin-bottom: 2rem;">Use of $85,000 Capital</h4>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+                    <h4 style="color: var(--color-gold); letter-spacing: 0.2em; text-transform: uppercase; font-size: 0.8rem; margin: 0;">Use of $85,000 Capital</h4>
+                    <button id="open-fund-modal" class="btn btn-outline" style="padding: 0.5rem 1.5rem; font-size: 0.6rem;">Deep Dive</button>
+                </div>
                 
                 <div class="fund-row">
                     <div class="label">
@@ -180,21 +183,21 @@
                         <p><strong>Producer:</strong> Pablo Guerrero / Dogo Sodu Washing Station<br>
                         <strong>Region:</strong> Nariño, Colombia OR Guji, Ethiopia<br>
                         <strong>Wholesale Price:</strong> ~$6.50/lb (Green)<br>
-                        <strong>Status:</strong> Market Verified</p>
+                        <strong>Status:</strong> Market Verified <a href="https://www.cafeimports.com/" target="_blank" style="color: var(--color-gold); text-decoration: underline; font-size: 0.75rem; margin-left: 0.5rem;">[Source: Cafe Imports]</a></p>
                     </div>
                     <div class="timeline-step">
                         <h4>Midnight Peak (2,100M Anaerobic)</h4>
                         <p><strong>Producer:</strong> Diego Bermudez (Finca El Paraiso)<br>
                         <strong>Region:</strong> Cauca, Colombia<br>
                         <strong>Wholesale Price:</strong> ~$11.00/lb (Green)<br>
-                        <strong>Status:</strong> Market Verified</p>
+                        <strong>Status:</strong> Market Verified <a href="https://counterculturecoffee.com/" target="_blank" style="color: var(--color-gold); text-decoration: underline; font-size: 0.75rem; margin-left: 0.5rem;">[Source: Counter Culture]</a></p>
                     </div>
                     <div class="timeline-step">
                         <h4>Glacier Obsidian (2,650M Volcanic)</h4>
                         <p><strong>Producer:</strong> Peoples of Bani Ofir OR Pepe Jijón (Finca Soledad)<br>
                         <strong>Region:</strong> Haraaz, Yemen OR Intag Valley, Ecuador<br>
                         <strong>Wholesale Price:</strong> ~$8.50 - $14.00/lb (Green)<br>
-                        <strong>Status:</strong> Market Verified</p>
+                        <strong>Status:</strong> Market Verified <a href="https://www.qimacoffee.com/" target="_blank" style="color: var(--color-gold); text-decoration: underline; font-size: 0.75rem; margin-left: 0.5rem;">[Source: Qima Coffee / Finca Soledad]</a></p>
                     </div>
                 </div>
             </div>
@@ -229,9 +232,40 @@
         </div>
     </footer>
 
+    <div id="fund-modal" class="modal-overlay">
+        <div class="modal-container" style="max-width: 600px;">
+            <div id="close-fund-modal" class="modal-close">&times;</div>
+            <h2 style="font-size: 2rem; color: var(--color-gold); margin-bottom: 2rem;">Capital Deep Dive</h2>
+            <p style="font-size: 0.9rem; opacity: 0.8; margin-bottom: 1.5rem;">The $85,000 raise provides a 12-month operational runway, heavily weighted towards direct asset acquisition rather than bloated marketing.</p>
+            <ul style="list-style: none; padding: 0; font-size: 0.85rem; opacity: 0.7;">
+                <li style="margin-bottom: 1.5rem;"><strong>$35,000 - Green Coffee:</strong> Secures ~3,500 lbs of elite green coffee across our 3 identified producers, assuming a blended average of $10/lb.</li>
+                <li style="margin-bottom: 1.5rem;"><strong>$20,000 - Tech & Production:</strong> Funds the reserve toll-roasting contracts ensuring we never buy roasting equipment. Covers the custom foil bag production and cryptographic QR tags for 1 year.</li>
+                <li style="margin-bottom: 1.5rem;"><strong>$18,000 - Local Cultivation:</strong> Grassroots digital launch, sensory evaluation QA sessions, and local investor/influencer "Vault Screenings" to drive exclusive subscriptions.</li>
+                <li style="margin-bottom: 1.5rem;"><strong>$12,000 - Origin Ops:</strong> Travel to the SCA Expo and 1 origin trip to finalize contracts and shoot 4K archival footage for the Provenance ledger.</li>
+            </ul>
+        </div>
+    </div>
+
     <script>
         const revealElements = document.querySelectorAll('.reveal');
         revealElements.forEach(el => el.classList.add('active'));
+
+        // Modal Logic
+        const fundModal = document.getElementById('fund-modal');
+        const openFundBtn = document.getElementById('open-fund-modal');
+        const closeFundBtn = document.getElementById('close-fund-modal');
+
+        if(openFundBtn) {
+            openFundBtn.addEventListener('click', () => {
+                fundModal.classList.add('active');
+            });
+            closeFundBtn.addEventListener('click', () => {
+                fundModal.classList.remove('active');
+            });
+            fundModal.addEventListener('click', (e) => {
+                if (e.target === fundModal) fundModal.classList.remove('active');
+            });
+        }
     </script>
 </body>
 </html>
