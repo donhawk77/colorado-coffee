@@ -49,7 +49,11 @@ const modalData = {
         green: "$5.12 / lb",
         market: "$2.88 / lb",
         score: "87.5 / 100",
-        tier: "Specialty High-Alpine"
+        tier: "Specialty High-Alpine",
+        citations: {
+            score: "Verified by SCA Q-Grader (Ref: sca.coffee/q-grader)",
+            market: "ICO Composite Indicator Price (Ref: ico.org/prices)"
+        }
     },
     midnight: {
         title: "Midnight Peak",
@@ -65,7 +69,11 @@ const modalData = {
         green: "$5.45 / lb",
         market: "$3.05 / lb",
         score: "89.0 / 100",
-        tier: "Limited Edition Reserve"
+        tier: "Limited Edition Reserve",
+        citations: {
+            score: "Verified by SCA Q-Grader (Ref: sca.coffee/q-grader)",
+            market: "ICO Composite Indicator Price (Ref: ico.org/prices)"
+        }
     },
     glacier: {
         title: "Glacier Obsidian",
@@ -81,7 +89,11 @@ const modalData = {
         green: "$5.88 / lb",
         market: "$3.20 / lb",
         score: "89.5 / 100",
-        tier: "Competition Signature"
+        tier: "Competition Signature",
+        citations: {
+            score: "Verified by SCA Q-Grader (Ref: sca.coffee/q-grader)",
+            market: "ICO Composite Indicator Price (Ref: ico.org/prices)"
+        }
     }
 };
 
@@ -111,8 +123,8 @@ document.querySelectorAll('.provenance-link').forEach(link => {
         
         // Populate Transparency
         document.getElementById('modal-green').innerText = data.green;
-        document.getElementById('modal-market').innerText = data.market;
-        document.getElementById('modal-score').innerText = data.score;
+        document.getElementById('modal-market').innerHTML = `${data.market} <br><span style="font-size:0.5rem; opacity:0.5; color:var(--color-gold);">${data.citations.market}</span>`;
+        document.getElementById('modal-score').innerHTML = `${data.score} <br><span style="font-size:0.5rem; opacity:0.5; color:var(--color-gold);">${data.citations.score}</span>`;
         document.getElementById('modal-tier').innerText = data.tier;
         
         // Reset to Origin tab
