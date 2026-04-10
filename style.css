@@ -136,6 +136,66 @@ nav {
   opacity: 1;
 }
 
+/* Burger Menu Styles */
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 2px;
+  background-color: var(--color-snow);
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    position: fixed;
+    right: 0px;
+    height: 100vh;
+    top: 0vh;
+    background-color: rgba(10, 20, 15, 0.98);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    z-index: 99;
+    backdrop-filter: blur(15px);
+  }
+
+  .nav-links li {
+    opacity: 1 !important;
+    margin-bottom: 2rem;
+  }
+
+  .burger {
+    display: block;
+    z-index: 101;
+  }
+}
+
+.nav-links.active {
+  transform: translateX(0%);
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
 /* Hero Section */
 .hero {
   height: 90vh; /* Shorter hero for faster flow */
